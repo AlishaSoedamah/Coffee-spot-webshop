@@ -5,6 +5,8 @@ use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\OrderController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, "index"]);
+Route::get('/products/{id}', [OrderController::class, "index"]);
 Route::get('/about-us', [AboutUsController::class, "aboutUs"]);
 Route::get('/register', [LoginController::class, "register"]);
 Route::post('/register', [LoginController::class, "postUser"]);
