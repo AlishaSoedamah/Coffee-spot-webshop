@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, "index"]);
 Route::get('/products/{id}', [OrderController::class, "index"]);
+Route::get('/scammed/{id}', [OrderController::class, "scammed"]);
 Route::get('/about-us', [AboutUsController::class, "aboutUs"]);
 Route::get('/register', [LoginController::class, "register"]);
 Route::post('/register', [LoginController::class, "postUser"]);

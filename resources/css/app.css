@@ -1,7 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 h2 {
     color: red;
 }
 
 a {
     background-color: red;
+}
+
+.card {
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    border: 2px dashed red;
 }
